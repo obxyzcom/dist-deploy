@@ -12,6 +12,4 @@ import { test, expect } from 'vitest';
 //     }),
 //   ).toBe('');
 // });
-test('demo', ()=>{
-
-})
+test('demo', () => {});
