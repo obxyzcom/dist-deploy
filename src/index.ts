@@ -1,1 +1,1 @@
-export { add } from './utils';
+export { distDeploy } from './utils';
