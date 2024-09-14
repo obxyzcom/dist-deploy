@@ -10,10 +10,11 @@
   "scripts": {
     "test": "vitest run",
     "build": "tsup",
-    "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test",
+    "ci": "npm run lint && npm run check-format && npm run check-exports && npm run test && npm run build",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack .",
+    "prelint": "npm run format",
     "lint": "tsc"
   },
   "exports": {

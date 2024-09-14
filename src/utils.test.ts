@@ -1,6 +1,6 @@
-import { add } from "./utils.js";
-import { test, expect } from "vitest";
+import { add } from './utils.js';
+import { test, expect } from 'vitest';
 
-test("add", () => {
+test('add', () => {
   expect(add(2, 4)).toBe(6);
 });
