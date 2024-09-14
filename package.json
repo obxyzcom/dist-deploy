@@ -1,7 +1,7 @@
 {
   "name": "@obxyz/dist-deploy",
   "description": "deploy local files to the server",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "dist"
@@ -15,7 +15,9 @@
     "check-format": "prettier --check .",
     "check-exports": "attw --pack .",
     "prelint": "npm run format",
-    "lint": "tsc"
+    "lint": "tsc",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
   },
   "exports": {
     ".": {
@@ -42,6 +44,7 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.16.2",
+    "@changesets/cli": "^2.27.8",
     "prettier": "^3.3.3",
     "tsup": "^8.2.4",
     "typescript": "^5.6.2",
